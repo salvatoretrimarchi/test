@@ -6,7 +6,8 @@ FROM python:3.7
 #
 # More information: https://www.gitpod.io/docs/config-docker/
 
-RUN pip install django==3.2
+RUN pip install django==3.2.0
 WORKDIR /tmp
 RUN django-admin startproject meet-test
-CMD ./manage.py runserver 0.0.0.0:3000
+CMD ls /tmp/meet-test
+#./manage.py runserver 0.0.0.0:3000
