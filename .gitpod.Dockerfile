@@ -6,7 +6,7 @@ FROM python:3.7
 #
 # More information: https://www.gitpod.io/docs/config-docker/
 
-RUN pip install django==3.2.0
+RUN pip install django==3.1.7
 WORKDIR /tmp
 RUN django-admin startproject meet-test
 CMD ls /tmp/meet-test
