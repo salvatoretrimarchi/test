@@ -7,6 +7,7 @@ FROM python:3.7
 # More information: https://www.gitpod.io/docs/config-docker/
 
 RUN pip install django==3.1.7
+RUN apt install nano
 WORKDIR /tmp
 RUN django-admin startproject meet_test
 CMD ls /tmp/meet_test
