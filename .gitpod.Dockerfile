@@ -8,6 +8,6 @@ FROM python:3.7
 
 RUN pip install django==3.1.7
 WORKDIR /tmp
-RUN django-admin startproject meet-test
-CMD ls /tmp/meet-test
+RUN django-admin startproject meet_test
+CMD ls /tmp/meet_test
 #./manage.py runserver 0.0.0.0:3000
